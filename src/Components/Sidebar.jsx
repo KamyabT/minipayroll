@@ -4,7 +4,7 @@ const Sidebar = () => {
       className="primary-bg d-flex flex-column"
       style={{ width: 200, height: "100vh" }}
     >
-      <ul className="li-design">
+      <ul className="li-design" style={{ borderBottom: "1px solid grey" }}>
         <li className="text-white">Mini Payroll</li>
       </ul>
       <ul className="li-design">

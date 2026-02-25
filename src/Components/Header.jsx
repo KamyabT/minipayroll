@@ -3,7 +3,7 @@ import { Button } from "react-bootstrap";
 const Header = () => {
   return (
     <header
-      className="d-flex justify-content-between align-items-center Background-bg py-2 px-4"
+      className="d-flex justify-content-between align-items-center Card-bg py-3 px-4"
       style={{ width: "100%" }}
     >
       <div className="d-flex align-items-center">

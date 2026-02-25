@@ -37,6 +37,8 @@
   }
 }
 
+
+
 /*******************Colors*******************/
 .primary {
   color: #163c73;
@@ -48,10 +50,10 @@
   color: #ef4444;
 }
 .Background {
-  background-color: #f8fafc;
+  background-color: #f3f5f9;
 }
 .Card {
-  background-color: #ffffff;
+  background-color: #fefefe;
 }
 /*******************bg-Colors*******************/
 .primary-bg {
@@ -64,10 +66,10 @@
   background-color: #ef4444;
 }
 .Background-bg {
-  background-color: #f8fafc;
+  background-color: #f3f5f9;
 }
 .Card-bg {
-  background-color: #ffffff;
+  background-color: #fefefe;
 }
 
 .li-design {
