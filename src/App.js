@@ -1,21 +1,18 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Dashboard from "./Pages/Dashboard";
+import Employees from "./Pages/Employees";
+import Reports from "./Pages/Reports";
 import "./App.css";
-import Sidebar from "./Components/Sidebar";
-import Header from "./Components/Header";
-import Card from "./Components/Card";
 
 function App() {
   return (
-    <div style={{ display: "flex" }}>
-      <Sidebar />
-      <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
-        <Header />
-        <div className="d-flex">
-          <Card title="Total Employees" value="5000"></Card>
-          <Card title="Total Monthly Payroll" value="$45000"></Card>
-          <Card title="Average Salary" value="$6000"></Card>
-        </div>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/dashboard" element={<Dashboard />} />
+        <Route path="/employees" element={<Employees />} />
+        <Route path="/reports" element={<Reports />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
