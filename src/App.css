@@ -69,8 +69,27 @@
 .Card-bg {
   background-color: #fefefe;
 }
+.hover {
+  background-color: #1e4d8f;
+}
+
+/********************************/
+ul a {
+  text-decoration: none;
+  list-style: none;
+}
+
+nav ul {
+  padding: 0;
+}
 
 nav ul a {
   text-decoration: none;
   list-style: none;
+  padding-left: 20px;
+}
+
+nav ul a.active {
+  background-color: #1e4d8f;
+  transition: all 500ms;
 }

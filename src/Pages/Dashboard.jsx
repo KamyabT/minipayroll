@@ -14,7 +14,7 @@ const Dashboard = () => {
           <Card title="Total Monthly Payroll" value="$45000"></Card>
           <Card title="Average Salary" value="$6000"></Card>
         </div>
-        <div>
+        <div className="Card-bg p-3 mx-4 my-4 rounded">
           <DashboardTable />
         </div>
       </div>

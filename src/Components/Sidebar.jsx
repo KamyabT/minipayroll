@@ -1,4 +1,4 @@
-import { Link , NavLink} from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faUsers, faChartLine, faChartPie } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,7 +9,9 @@ const Sidebar = () => {
       style={{ width: 200, height: "100vh" }}
     >
       <ul className="li-design " style={{ borderBottom: "1px solid grey" }}>
-        <Link to="/dashboard">Mini Payroll</Link>
+        <Link className="text-white py-2 d-flex align-items-center" to="/dashboard">
+          Mini Payroll
+        </Link>
       </ul>
       <nav>
         <ul className="li-design">
