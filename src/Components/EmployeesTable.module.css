@@ -1,0 +1,30 @@
+tr:nth-child(odd) {
+  background-color: #f3f5f9;
+}
+
+/* th {
+    padding-bottom: 10px;
+}
+
+td {
+  padding: 10px;
+} */
+
+/* th {
+  background-color: #f3f5f9;
+} */
+
+th,
+td {
+  padding: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:not(:last-child) td,
+tr:not(:last-child) th {
+  border-bottom: 1px solid #e3e6ee;
+}

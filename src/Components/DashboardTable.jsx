@@ -1,4 +1,4 @@
-import style from "./DashboardTable.module.css";
+import style from "./DashboardTable.module.css";  
 
 const DashboardTable = () => {
   return (

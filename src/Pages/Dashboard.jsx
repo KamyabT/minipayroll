@@ -8,7 +8,7 @@ const Dashboard = () => {
     <div style={{ display: "flex" }}>
       <Sidebar />
       <div style={{ flex: 1, display: "flex", flexDirection: "column" }}>
-        <Header />
+        <Header title="Dashboard" />
         <div className="d-flex">
           <Card title="Total Employees" value="5000"></Card>
           <Card title="Total Monthly Payroll" value="$45000"></Card>
