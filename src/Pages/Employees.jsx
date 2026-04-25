@@ -17,6 +17,7 @@ const Employees = () => {
   const [selectedEmployee, setSelectedEmployee] = useState(null);
   const [isPerformingAction, setPerformingAction] = useState(false);
   const [query, setQuery] = useState("");
+  const [sortType, setSortType] = useState("");
 
   /***********Actions**********/
 
@@ -172,6 +173,20 @@ const Employees = () => {
     }
   });
 
+  let sortedEmployees = [...filteredEmployees];
+
+  if (sortType === "name-asc") {
+    sortedEmployees.sort((a, b) => a.name.localeCompare(b.name));
+  } else if (sortType === "name-dsc") {
+    sortedEmployees.sort((a, b) => b.name.localeCompare(a.name));
+  } else if (sortType === "department") {
+    sortedEmployees.sort((a, b) => a.department.localeCompare(b.department));
+  } else if (sortType === "salary") {
+    sortedEmployees.sort((a, b) => a.salary - b.salary);
+  } else if (sortType === "status") {
+    sortedEmployees.sort((a, b) => a.status.localeCompare(b.status));
+  }
+
   return (
     <div style={{ display: "flex" }}>
       <Sidebar />
@@ -188,10 +203,10 @@ const Employees = () => {
             <div className="text-center h5">Loading Employees List Please Wait...</div>
           ) : (
             <EmployeesTable
-              // employees={emps}
-              employees={filteredEmployees}
+              employees={sortedEmployees}
               onDelete={hanldeDelete}
               onEdit={handleEdit}
+              setSortType={setSortType}
             />
           )}
         </div>
